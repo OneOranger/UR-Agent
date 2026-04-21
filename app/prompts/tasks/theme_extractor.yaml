@@ -1,0 +1,23 @@
+id: theme_extractor
+name: Theme Extractor
+version: v1
+owner: ur_agent_team
+description: 从证据中提取研究主题
+tags:
+  - task
+  - analysis
+  - themes
+output_schema: ThemeListOutput
+
+template: |
+  请基于以下真实证据，提炼研究主题（themes），不要直接输出最终产品建议。
+
+  证据：
+  {{ evidence_texts }}
+
+  要求：
+  1. 主题要比原始证据更抽象，但不要过度概括
+  2. 每个主题都要有清晰名称和说明
+  3. 主题数量控制在 2 到 5 个
+  4. 只根据证据生成，不要编造
+  5. confidence_score 在 0 到 1 之间

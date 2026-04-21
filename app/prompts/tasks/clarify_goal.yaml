@@ -1,0 +1,22 @@
+id: clarify_goal
+name: Clarify Goal
+version: v1
+owner: ur_agent_team
+description: 根据用户输入澄清研究目标
+tags:
+  - task
+  - planning
+  - clarify
+output_schema: ClarifiedGoalOutput
+
+template: |
+  请根据以下用户研究需求，输出清晰、专业、可执行的研究目标定义。
+
+  用户需求：
+  {{ user_request }}
+
+  要求：
+  1. research_goal 要清晰、专业、可执行
+  2. target_users 必须是用户群体列表
+  3. business_context 要概括本次研究的业务背景
+  4. key_questions 要列出这次研究最该回答的问题

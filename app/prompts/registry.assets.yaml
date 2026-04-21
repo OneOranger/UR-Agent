@@ -1,0 +1,48 @@
+system_prompts:
+  qualitative_analyst: "app/prompts/system/qualitative_analyst.yaml"
+  product_strategist: "app/prompts/system/product_strategist.yaml"
+  research_planner: "app/prompts/system/research_planner.yaml"
+  journey_designer: "app/prompts/system/journey_designer.yaml"
+
+task_prompts:
+  clarify_goal: "app/prompts/tasks/clarify_goal.yaml"
+  planner: "app/prompts/tasks/planner.yaml"
+  theme_extractor: "app/prompts/tasks/theme_extractor.yaml"
+  persona_builder: "app/prompts/tasks/persona_builder.yaml"
+  journey_mapper: "app/prompts/tasks/journey_mapper.yaml"
+  recommendation_builder: "app/prompts/tasks/recommendation_builder.yaml"
+
+blocks:
+  evidence_rules: "app/prompts/blocks/evidence_rules.yaml"
+  structure_rules: "app/prompts/blocks/structure_rules.yaml"
+
+mappings:
+  clarify_goal:
+    system: research_planner
+    blocks:
+      - structure_rules
+
+  planner:
+    system: research_planner
+    blocks:
+      - structure_rules
+
+  theme_extractor:
+    system: qualitative_analyst
+    blocks:
+      - evidence_rules
+
+  persona_builder:
+    system: qualitative_analyst
+    blocks:
+      - evidence_rules
+
+  journey_mapper:
+    system: journey_designer
+    blocks:
+      - evidence_rules
+
+  recommendation_builder:
+    system: product_strategist
+    blocks:
+      - evidence_rules

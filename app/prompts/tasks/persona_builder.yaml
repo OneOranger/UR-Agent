@@ -1,0 +1,35 @@
+id: persona_builder
+name: Persona Builder
+version: v1
+owner: ur_agent_team
+description: 基于研究结果生成用户画像
+tags:
+  - task
+  - persona
+  - synthesis
+output_schema: PersonaListOutput
+
+template: |
+  请基于以下研究主题、洞察和原始证据，提炼 1 到 3 个用户画像（Persona）。
+
+  研究主题：
+  {{ theme_text }}
+
+  研究洞察：
+  {{ insight_text }}
+
+  原始证据：
+  {{ evidence_texts }}
+
+  要求：
+  1. Persona 必须是“典型用户类型”的抽象，不是某个真实个人
+  2. 每个 Persona 必须包含：
+     - name
+     - summary
+     - goals
+     - pain_points
+     - behaviors
+     - motivations
+  3. 不要编造与研究材料无关的内容
+  4. 画像数量控制在 1 到 3 个
+  5. 输出要结构化，不要写解释性废话

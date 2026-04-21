@@ -1,0 +1,36 @@
+id: journey_mapper
+name: Journey Mapper
+version: v1
+owner: ur_agent_team
+description: 基于 Persona 和研究结果生成用户旅程图
+tags:
+  - task
+  - journey
+  - synthesis
+output_schema: JourneyMapOutput
+
+template: |
+  请基于以下 Persona、研究主题和洞察，生成一条结构化的用户旅程图（Journey Map）。
+
+  Persona：
+  {{ persona_text }}
+
+  研究主题：
+  {{ theme_text }}
+
+  研究洞察：
+  {{ insight_text }}
+
+  要求：
+  1. 旅程阶段控制在 4 到 6 个
+  2. 每个阶段都必须包含：
+     - stage_name
+     - user_goal
+     - user_actions
+     - touchpoints
+     - pain_points
+     - opportunities
+     - emotion
+  3. 阶段应该符合产品的真实使用过程
+  4. 不要编造与研究材料无关的内容
+  5. 输出结构化结果，不要写多余解释

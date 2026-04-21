@@ -1,0 +1,16 @@
+id: evidence_rules
+name: Evidence Rules
+version: v1
+owner: ur_agent_team
+description: 证据优先的通用约束块
+tags:
+  - block
+  - evidence
+  - safety
+output_schema: none
+
+template: |
+  证据约束：
+  1. 只能基于输入材料输出
+  2. 不允许编造引文、用户原话或研究结论
+  3. 不允许脱离证据进行过度泛化

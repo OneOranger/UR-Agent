@@ -1,0 +1,37 @@
+id: recommendation_builder
+name: Recommendation Builder
+version: v1
+owner: ur_agent_team
+description: 基于研究结果生成结构化建议
+tags:
+  - task
+  - strategy
+  - recommendation
+output_schema: RecommendationListOutput
+
+template: |
+  请基于以下研究主题、洞察、Persona 和 Journey Map，输出结构化的产品建议。
+
+  研究主题：
+  {{ theme_text }}
+
+  研究洞察：
+  {{ insight_text }}
+
+  Persona：
+  {{ persona_text }}
+
+  Journey Map：
+  {{ journey_text }}
+
+  要求：
+  1. 建议必须具体、可执行，不能空泛
+  2. 每条建议都必须包含：
+     - title
+     - description
+     - priority（只能是 high / medium / low）
+     - rationale
+     - related_opportunity_area
+  3. 建议数量控制在 3 到 5 条
+  4. 不要输出与研究材料无关的建议
+  5. 优先输出对产品设计和体验优化最有价值的建议

@@ -1,0 +1,30 @@
+runtime:
+  clarify_goal:
+    enabled: true
+    version: v1
+    model_role: research_planner
+
+  planner:
+    enabled: true
+    version: v1
+    model_role: research_planner
+
+  theme_extractor:
+    enabled: true
+    version: v1
+    model_role: qualitative_analyst
+
+  persona_builder:
+    enabled: true
+    version: v1
+    model_role: qualitative_analyst
+
+  journey_mapper:
+    enabled: true
+    version: v1
+    model_role: journey_designer
+
+  recommendation_builder:
+    enabled: true
+    version: v1
+    model_role: product_strategist

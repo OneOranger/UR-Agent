@@ -1,0 +1,30 @@
+versions:
+  clarify_goal:
+    current: v1
+    available:
+      - v1
+
+  planner:
+    current: v1
+    available:
+      - v1
+
+  theme_extractor:
+    current: v1
+    available:
+      - v1
+
+  persona_builder:
+    current: v1
+    available:
+      - v1
+
+  journey_mapper:
+    current: v1
+    available:
+      - v1
+
+  recommendation_builder:
+    current: v1
+    available:
+      - v1

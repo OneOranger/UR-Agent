@@ -1,0 +1,9 @@
+[project]
+name = "ur-agent"
+version = "0.1.0"
+description = "Production-style User Research Agent built with LangGraph + FastAPI"
+requires-python = ">=3.11"
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]

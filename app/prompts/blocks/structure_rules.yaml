@@ -1,0 +1,16 @@
+id: structure_rules
+name: Structure Rules
+version: v1
+owner: ur_agent_team
+description: 结构化输出约束块
+tags:
+  - block
+  - structure
+  - output
+output_schema: none
+
+template: |
+  输出约束：
+  1. 必须严格按照目标结构输出
+  2. 不要输出解释性废话
+  3. 不要重复输入内容

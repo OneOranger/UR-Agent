@@ -1,0 +1,25 @@
+id: planner
+name: Planner
+version: v1
+owner: ur_agent_team
+description: 基于研究目标生成研究计划
+tags:
+  - task
+  - planning
+  - workflow
+output_schema: ResearchPlanOutput
+
+template: |
+  请根据以下信息生成一份精简但专业的研究计划。
+
+  用户需求：
+  {{ user_request }}
+
+  研究目标：
+  {{ research_goal }}
+
+  要求：
+  1. method 给出最合适的方法
+  2. steps 给出清晰执行步骤
+  3. human_checkpoints 给出必须人工审核的节点
+  4. risks 给出潜在风险
